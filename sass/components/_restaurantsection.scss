@@ -1,0 +1,251 @@
+.header__returnArrowContainer {
+    position: absolute;
+    left: 23px;
+    top: 26px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header__returnArrowIcon {
+    font-size: 16px;
+    color: $text-color;
+}
+
+.order__section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @include desktop-only {
+        align-items: center;
+    }
+}
+
+.restaurant__banniere {
+    width: 100%;
+}
+
+.restaurant__banniereImage {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+
+    @include desktop-only {
+        height: 350px;
+    }
+}
+
+.restaurant__section {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: $background-color;
+    border-radius: 40px 40px 0 0;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-bottom: 40px;
+    margin-top: -55px;
+
+    @include desktop-only {
+        width: 73%;
+    }
+}
+
+.restaurant__sectionTitleContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 42px;
+
+    @include desktop-only {
+        padding-left: 210px;
+        padding-right: 210px;
+    }
+}
+
+// Dish
+
+.dish__section {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    opacity: 1;
+
+    @include desktop-only {
+        padding-left: 210px;
+        padding-right: 210px;
+    }
+}
+
+.dish__sectionTitle {
+    padding-bottom: 5px;
+    margin-bottom: 13px;
+    border-bottom: solid 3px $new-background-color;
+    width: 40px;
+}
+
+.dish__sectionListContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.dish__sectionList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    color: $text-color;
+    border-radius: 15px;
+    background-color: $color-white;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+    .dish__checked {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $new-background-color;
+        border-radius: 0 15px 15px 0;
+        width: 0%;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+    }
+
+    &:hover {
+        cursor: pointer;
+        .dish__checked {
+            width: 17%;
+            transition: width .6s, opacity .6s;
+            opacity: 1;
+        }
+        .dish__price {
+            margin-right: 17%;
+            transition: margin-right .6s;
+        }
+        .fa-circle-check {
+            transform: rotate(0deg);
+            transition: transform .8s;
+        }
+    }        
+}
+
+.fa-circle-check {
+    font-size: 25px;
+    color: $color-white;
+    transform: rotate(180deg);
+}
+
+.dish__text {
+    font-family: "roboto";
+    font-size: 18px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dish__description {
+    font-family: "roboto";
+    font-size: 15px;
+    font-weight: 300;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dish__details {
+    padding: 12px;
+    overflow: hidden;
+}
+
+.dish__price {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 12px;
+    padding-bottom: 12px;
+}
+
+.dish__priceText {
+    font-family: "roboto";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.starter {
+    animation: starter 1s 1;
+}
+
+.dish {
+    animation: dish 1s 1;
+}
+
+.dessert {
+    animation: dessert 1s 1;
+}
+
+@keyframes starter {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dish {
+    0% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dessert {
+    0% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+// Order
+
+.order__buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.order__button {
+    width: 50%;
+    align-items: center;
+
+    @include desktop-only {
+        width: 17%;
+    }
+}

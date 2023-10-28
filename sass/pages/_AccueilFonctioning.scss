@@ -1,0 +1,98 @@
+
+// Section fonctionnement page d'accueil
+
+.fonctioning__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 26px;
+
+    @include tablette-only {
+        align-items: center;
+    }
+
+    @include desktop-only {
+        align-items: flex-start;
+        padding-left: 193px;
+
+    }
+}
+
+.fonctioning__title {
+    margin-top: 48px;
+}
+
+.fonctioning__listContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 68px;
+    margin-left: 12px;
+
+    @include desktop-only {
+        flex-direction: row;
+        width: 80%;
+    }
+}
+
+.fonctioning__list {
+    width: 100%;
+
+}
+
+.fonctioning__listLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding: 28px 0;
+    padding-left: 33px;
+    gap: 23px;
+    background-color: $background-color;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+
+    &--color {
+        background-color: $fonctioning-hover-color;
+    }
+
+    @include tablette-only {
+        min-width: 341px;
+    }
+
+    @include desktop-only {
+        min-width: 0;
+    }
+}
+
+
+
+.fonctioning__listLinkNumber {
+    padding: 5px 10px 5px 10px;
+    background-color: $color-purple;
+    position: absolute;
+    left: -12px;
+    font-family: "roboto";
+    font-size: 14px;
+    font-weight: 500;
+    color: $color-white;
+    border-radius: 100%;
+
+}
+
+.fonctioning__listLinkIcon {
+    color: $color-grey;
+    font-size: 20px;
+    
+    &--color {
+        color: $color-purple;
+    }
+
+}
+
+.fonctioning__listLinkText {
+    font-family: "roboto";
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-black;
+}

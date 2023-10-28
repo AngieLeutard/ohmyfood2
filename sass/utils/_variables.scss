@@ -1,0 +1,37 @@
+
+// Colors
+$color-white: white;
+$color-black: #101010;
+$color-grey-dark: #353535;
+$color-grey: #7E7E7E;
+$color-grey-medium: #EAEAEA;
+$color-grey-light: #F7F7F7;
+$color-grey-light-hover: #F5EDFF;
+$color-green: #008766;
+$color-green-light: #99E2D0;
+$color-purple: #9356DC;
+$color-purple-light: #F5EDFF;
+$color-pink: #FF79DA;
+
+
+// Colors names
+
+$text-color: $color-black;
+$footer-color: $color-grey-dark;
+$input-color: $color-grey-medium;
+$input-text-color: $color-grey-dark;
+$background-color: $color-grey-light;
+$background-color-hover: $color-grey-light-hover;
+$new-text-color: $color-green;
+$new-background-color: $color-green-light;
+$icons-color: $color-purple;
+$btn-txt-color: $color-white;
+$footer-text-color: $color-white;
+$fonctioning-hover-color: $color-purple-light;
+
+// Breakpoints
+
+$breakpoints: (
+    desktop: 769px,
+    tablette: 426px
+)
