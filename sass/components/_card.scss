@@ -15,11 +15,11 @@
     }
 
     @include tablette-only {
-        min-width: 385px;
+        width: 45%;
     }
 
     @include desktop-only {
-        min-width: 335px;
+        width: 45%;
     }
 }
 

@@ -25,7 +25,7 @@
 .fonctioning__listContainer {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 37px;
     margin-bottom: 68px;
     margin-left: 12px;
 
@@ -51,10 +51,6 @@
     background-color: $background-color;
     border-radius: 20px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-
-    &--color {
-        background-color: $fonctioning-hover-color;
-    }
 
     @include tablette-only {
         min-width: 341px;
