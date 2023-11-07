@@ -29,10 +29,14 @@
     margin-bottom: 64px;
     gap: 20px;
 
-    @include desktop-only {
-        justify-content: center;
-        gap: 96px;
+    @include tablette-only {
         flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    @include desktop-only {
+        flex-flow: row wrap;
+        justify-content: center;
         width: 100%;
         padding-bottom: 20px;
     }

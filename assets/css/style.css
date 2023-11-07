@@ -62,7 +62,7 @@
 }
 @media screen and (min-width: 426px) {
   .restaurant__cardContainer {
-    width: 45%;
+    width: 48%;
   }
 }
 @media screen and (min-width: 769px) {
@@ -692,11 +692,16 @@ body {
   margin-bottom: 64px;
   gap: 20px;
 }
+@media screen and (min-width: 426px) {
+  .restaurant__cardsList {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 769px) {
   .restaurant__cardsList {
-    justify-content: center;
-    gap: 96px;
     flex-flow: row wrap;
+    justify-content: center;
     width: 100%;
     padding-bottom: 20px;
   }
