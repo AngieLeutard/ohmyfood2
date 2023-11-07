@@ -207,6 +207,8 @@
   .restaurant__sectionTitleContainer {
     padding-left: 210px;
     padding-right: 210px;
+    justify-content: center;
+    gap: 24px;
   }
 }
 
